@@ -1,0 +1,105 @@
+/*establecer la propiedad box-sizing para que todos los elementos tengan el mismo width and height especificados*/
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*Establecer margin y padding a 0, del docuento entero*/
+body{
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+/*Centrar el banner con margin auto y estableciendo el width diferente de 100%*/
+.banner{
+  margin: auto;
+  width: 86%;
+  margin-top: 10px;
+  }
+
+/*Hacer que la imagen sea Responsive, se escalara en todos los dispositivos*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-menu{
+display: flex;
+background-color: #f1f0f0;
+justify-content: center;
+align-items: center;
+}
+
+
+nav.nav-menu a{
+  color: #504f4f;
+  padding: 22px 0 22px 15px;
+  margin-right: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  font-family: 'Montserrat', sans-serif;
+  transition: 0.3s;
+}
+
+@media(max-width:768px){
+  .nav-menu{
+    flex-direction: column;
+  }
+  }
+
+i.material-icons {
+  font-size: 15px;
+  cursor: pointer;
+  border: 1px solid black;
+  transition: 0.3s;
+}
+
+.principalsection{
+  margin: auto;
+  width: 90%;
+  margin-top: 30px;
+  line-height: 1.8em;
+  font-size: 1em;
+  overflow: hidden;
+  text-align: justify;
+  color: #504f4f;
+}
+
+
+@media(min-width:768px){
+  section.flexbox-container, section.flexbox-container2, section.flexbox-container3{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+section.flexbox-container{
+  margin-top: 50px;
+}
+
+.item{
+  flex-basis: 33.33%;
+  text-align: center;
+  align-items: baseline;
+  padding: 20px;
+  
+}
+
+ .item img{
+  width: 300px;
+  
+}
+
+div.item h2{
+  font-size: 1em;
+  font-weight: 900;
+  color: black;
+}
+
+div.item p{
+  font-size: 0.81em;
+  line-height: 1.7em;
+}
